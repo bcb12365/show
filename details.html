@@ -33,24 +33,7 @@
         }
         
         /* Header Styles */
-        .header-top {
-            background-color: #204E96;
-            color: white;
-            padding: 12px 0;
-            font-size: 14px;
-        }
-        
-        .header-top-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .wmo-link {
-            color: white;
-            text-decoration: underline;
-            font-weight: 600;
-        }
+        /* Note: Original header-top is removed as per new header structure */
         
         .main-header {
             background: white;
@@ -71,11 +54,11 @@
             gap: 10px;  /* 图标之间间距更紧凑 */
         }
         
-        .wmo-logo {
+        .wmo-logo { /* Now used for 图标1.png */
             height: 55px;  /* 图标大小一致 */
         }
         
-        .ig3is-logo {
+        .ig3is-logo { /* Now used for 图标2.png */
             height: 55px;  /* 图标大小一致 */
         }
         
@@ -88,7 +71,7 @@
             padding-left: 15px;  /* 减小标题内边距 */
         }
         
-        .search-button {
+        .search-button { /* Now used for the "注册" button */
             background: #204E96;
             color: white;
             border: none;
@@ -105,11 +88,12 @@
             background: #1a3d7a;
         }
 
-        .search-icon {
+        /* Search icon is no longer directly used in the button as per new header */
+        /* .search-icon {
             width: 20px;
             height: 20px;
             fill: currentColor;
-        }
+        } */
         
         .navigation {
             background: #009DD0;
@@ -132,7 +116,8 @@
             padding: 10px 0;
         }
         
-        .nav-menu a:hover {
+        .nav-menu a:hover,
+        .nav-menu li.active a {
             color: #FFE066;
         }
         
@@ -183,11 +168,13 @@
         
         .content-section p, .content-section ul {
             margin-bottom: 15px;
-            padding-left: 20px;
+            /* Removed default padding-left to allow specific control for lists */
         }
         
         .content-section ul {
+            list-style-type: disc; /* Ensures consistent bullet points */
             list-style-position: outside;
+            padding-left: 20px; /* Indent for bullet points */
         }
         
         .content-section a {
@@ -314,7 +301,7 @@
         <div class="container-wide">
             <ul class="nav-menu">
                 <li><a href="index.html">会议主页</a></li>
-                <li><a href="details.html">会议详情</a></li>
+                <li class="active"><a href="details.html">会议详情</a></li> <!-- Added active class -->
                 <li><a href="schedule.html">会议日程</a></li>
                 <li><a href="contact.html">联系我们</a></li>
             </ul>
@@ -324,93 +311,123 @@
     <main class="main-content">
         <div class="container-wide">
             <h1 class="page-title">第五届中国温室气体监测研讨会</h1>
-            <h2 class="page-subtitle">会议详情（第二轮通知）</h2>
+            <h2 class="page-subtitle">关于召开“第五届中国温室气体监测研讨会”的第三轮通知</h2>
             
             <div class="container-medium">
                 <div class="content-text">
-                    <div class="content-section">
-                        <p>为深入贯彻落实党中央、国务院关于碳达峰碳中和重大战略…\
-                    </div>
-
+                    <p>为深入贯彻落实党中央、国务院关于碳达峰碳中和的重大战略决策部署，进一步加强温室气体监测技术交流与合作，“第五届中国温室气体监测研讨会”定于2025年10月18日-19日在湖北省武汉市召开，本次会议由中国地质大学（武汉）科学技术协会主办，中国地质大学（武汉）地理与信息工程学院承办，采用线下会议的形式。</p>
+                    <p>​</p>
                     <div class="content-section">
                         <h2>01 背景</h2>
-                        <p>2025年是我国“十四五”规划的收官之年，也是迈向碳达峰目标的关键节点。
-                        在国家队“双碳”战略引领下，温室气体监测技术成为实现精准减排和绿色转型的重要支撑。
-                        我国在温室气体监测与控制方面取得了显著进展，政策与技术双轮驱动，碳监测卫星实现天基监测突破，监测体系不断完善。
-                        为进一步推动学术交流与合作，自2019年来，已成功举办四届“中国温室气体监测研讨会”，成立了“中国温室气体监测联盟”。
-                        本届研讨会将围绕多个专题开展深入交流与讨论。</p>
+                        <p>2025年是我国“十四五”规划的收官之年，也是迈向碳达峰目标的关键节点。在国家“双碳”战略引领下，温室气体监测技术成为实现精准减排和绿色转型的重要支撑。2025年4月，习近平主席在“气候和公正转型领导人峰会”上宣布，中国将于联合国气候变化贝伦大会（COP30）前，公布包括所有温室气体的2035年国家自主贡献目标，充分彰显了我国在全球气候治理中的坚定承诺和责任担当。实现这一目标，离不开科学、准确的温室气体监测体系的有力支撑。近年来，我国在温室气体监测与控制方面取得了显著进展。政策层面，为加快构建碳排放双控制度体系，国家发展改革委推动将碳排放指标纳入国民经济和社会发展规划，并提出到2025年完善碳排放统计核算体系，建立国家温室气体排放因子数据库，为“十五五”时期实施碳排放总量和强度双控奠定基础。同时，国家发展改革委、市场监管总局、生态环境部联合发布《关于进一步强化碳达峰碳中和标准计量体系建设行动方案（2024—2025年）》，提出到2025年底，将研制完成一批碳计量标准和技术规范。在政策与技术推动下，我国碳监测卫星已实现天基监测突破，显著提升了温室气体监测精度与效率。我国温室气体监测体系正不断完善，监测能力持续提升。为进一步推动温室气体监测领域的学术交流与合作，自2019年以来，已成功举办四届“中国温室气体监测研讨会”，分别由中国科学院大气物理研究所、复旦大学和南京大学承办，成立了“中国温室气体监测联盟”，促进了监测技术发展与应用。本届研讨会将围绕城市与园区企业尺度温室气体浓度和排放监测反演、卫星遥感温室气体浓度和排放监测（国家/省级尺度）、同位素及其他示踪气体监测及应用、极地和海洋温室气体浓度监测、国产温室气体监测仪器及应用、基于人工智能的温室气体排放监测与核算等专题开展深入交流与讨论。</p>
                     </div>
 
                     <div class="content-section">
                         <h2>02 目的</h2>
                         <ul>
-                            <li>促进中国温室气体监测同行交流；</li>
-                            <li>强化全场景多技术融合的温室气体监测成功案例交流共享；</li>
-                            <li>推动中国温室气体监测仪器自主研发和应用。</li>
+                            <li>(1)促进中国温室气体监测同行交流；</li>
+                            <li>(2)强化全场景多技术融合的温室气体监测成功案例交流共享；</li>
+                            <li>(3)推动中国温室气体监测仪器自主研发和应用。</li>
                         </ul>
                     </div>
 
                     <div class="content-section">
                         <h2>03 会议主要信息</h2>
                         <ul>
-                            <li><strong>会议时间:</strong> 2025年10月18-19日</li>
-                            <li><strong>注册时间:</strong> 2025年10月17日</li>
-                            <li><strong>会议地点:</strong> 武汉光谷金盾酒店</li>
+                            <li>(1)会议时间: 2025年10月18-19日</li>
+                            <li>(2)注册时间: 2025年10月17日</li>
+                            <li>(3)会议地点:武汉光谷金盾酒店</li>
                         </ul>
                     </div>
                     
                     <div class="content-section">
-                        <h2>04 会议内容</h2>
+                        <h2>04 科学指导委员会（按姓氏拼音排序）</h2>
+                        <p>曹军骥，陈镜明，陈立奇，丁爱军，葛全胜，顾行发，贺克斌，胡建信，李健军，刘文清，刘毅，卢乃锰，吕达仁，石广玉，苏杭，谈哲敏，王会军，王茂华，徐冠华，徐华清，于贵瑞，张人禾，周卫健</p>
+                    </div>
+
+                    <div class="content-section">
+                        <h2>05 组委会</h2>
+                        <p>王绍强、王伦澈、陶明辉（中国地质大学（武汉）地理与信息工程学院）<br>
+                        曾宁、韩鹏飞（中国科学院大气物理研究所）<br>
+                        姚波（复旦大学大气与海洋科学系）<br>
+                        陈辉林（南京大学大气科学学院）<br>
+                        刘诚（中国科技大学精密机械与精密仪器系）<br>
+                        吕洪刚（国家海洋环境预报中心）<br>
+                        牛振川（中国科学院地球环境研究所）<br>
+                        丁俊男（中国环境监测总站）<br>
+                        詹力扬（自然资源部第三海洋研究所）</p>
+                    </div>
+
+                    <div class="content-section">
+                        <h2>06 会议内容</h2>
                         <p><strong>专题1：</strong>城市与园区企业尺度温室气体浓度和排放监测反演<br>
-                        <strong>专题2：</strong>国家/省级尺度温室气体浓度和排放监测（含卫星遥感监测）<br>
-                        <strong>专题3：</strong>同位素及其它示踪气体监测及应用<br>
-                        <strong>专题4：</strong>极地和海洋温室气体浓度监测<br>
-                        <strong>专题5：</strong>国产温室气体监测仪器及应用<br>
-                        <strong>专题6：</strong>基于人工智能的温室气体排放监测与核算</p>
+                        召集人：复旦大学 姚波 教授、<br>
+                        中国科学院大气物理研究所 韩鹏飞 副研究员</p>
+                        <p><strong>专题2：</strong>国家/省级尺度温室气体浓度和排放监测（含卫星遥感监测）<br>
+                        召集人：中国地质大学（武汉） 王伦澈 教授、<br>
+                        中国地质大学（武汉） 陶明辉 教授、<br>
+                        中国地质大学（武汉） 王轶 教授</p>
+                        <p><strong>专题3：</strong>同位素及其它示踪气体监测及应用<br>
+                        召集人：中国科学院地球环境研究所 牛振川 研究员</p>
+                        <p><strong>专题4：</strong>极地和海洋温室气体浓度监测<br>
+                        召集人：国家海洋环境预报中心 吕洪刚 研究员</p>
+                        <p><strong>专题5：</strong>国产温室气体监测仪器及应用<br>
+                        召集人：中国科学院地理研究所 王绍强 研究员</p>
+                        <p><strong>专题6：</strong>基于人工智能的温室气体排放监测与核算<br>
+                        召集人：南京大学 陈辉林 教授</p>
                     </div>
 
                     <div class="content-section">
-                        <h2>05 会议注册及摘要</h2>
-                        <p>请于2025年9月15日前点击下方链接在线报名注册并提交中文摘要（1500字以内）。</p>
-                        <p><a href="https://wj.qq.com/s2/22026324/0b5e/" target="_blank">点击此处立即报名注册</a></p>
+                        <h2>07 会议注册</h2>
+                        <p>请于2025年10月08日前扫描下方二维码或者点击链接在线报名注册。</p>
+                        <p><a href="https://wj.qq.com/s2/22026324/0b5e/" target="_blank">https://wj.qq.com/s2/22026324/0b5e/</a></p>
                     </div>
 
                     <div class="content-section">
-                        <h2>06 会议日程</h2>
+                        <h2>08 会议日程</h2>
                         <ul>
-                            <li><strong>10月17日下午:</strong> 会议报到、注册</li>
-                            <li><strong>10月18日上午:</strong> 开幕式、专题1</li>
-                            <li><strong>10月18日下午:</strong> 专题2、专题3报告及集体讨论</li>
-                            <li><strong>10月19日上午:</strong> 专题4、专题5</li>
-                            <li><strong>10月19日下午:</strong> 专题6及集体讨论、闭幕总结</li>
+                            <li>(1)10月17日下午: 会议报到、注册</li>
+                            <li>(2)10月18日<br>
+                                上午：开幕式、专题1<br>
+                                下午：专题2、专题3报告及集体讨论</li>
+                            <li>(3)10月19日<br>
+                                上午：专题4、专题5<br>
+                                下午：专题6及集体讨论、闭幕总结</li>
                         </ul>
-                        <p><strong>报告形式：</strong>口头报告、海报展示</p>
+                        <p>报告形式：口头报告、快闪</p>
                     </div>
                     
                     <div class="content-section">
-                        <h2>07 会议费用</h2>
+                        <h2>09 会议费用</h2>
+                        <p>本次会议将收取注册费，用于支持会议的组织和运行。</p>
                         <ul>
-                           <li><strong>在职人员:</strong> 500元/人</li>
-                           <li><strong>学生代表:</strong> 300元/人 (需提供有效学生证)</li>
+                           <li>（1）在职人员（包括高校教师、科研院所研究人员及企事业单位代表）注册费为500元/人</li>
+                           <li>（2）学生代表（包括本科生、硕士生及博士生）注册费为300元/人（需提供有效学生证证明）</li>
+                           <li>（3）本次会议注册费统一采用现场POS机收费。</li>
                         </ul>
-                        <p>具体缴费流程及其他相关事宜将于后续通知中说明。</p>
                     </div>
 
                     <div class="content-section">
-                        <h2>08 会务联系人</h2>
-                        <p><strong>会务咨询:</strong> 黄嘉新<br>
-                        电话: 19145063646 (微信: specialbsxq)<br>
-                        邮箱: huangjx@cug.edu.cn</p>
-                        <p><strong>报名事务:</strong> 唐子悦<br>
-                        电话: 13657440287 (微信: Shao001228)<br>
-                        (报名注册后请联系唐子悦进群)</p>
+                        <h2>10 会议住宿</h2>
+                        <p>本次会议会场设在金盾酒店，为保障参会人员的住宿需求，请有意向入住金盾酒店的参会代表，务必扫描下方二维码或点击链接，填写您的住宿意向登记表。会议组委会将统一收集您的住宿意向信息，代为预订。如有疑问，欢迎联系会务联系人咨询。</p>
+                        <p><a href="https://wj.qq.com/s2/24157739/6f2e/" target="_blank">https://wj.qq.com/s2/24157739/6f2e/</a></p>
+                    </div>
+
+                    <div class="content-section">
+                        <h2>11 会务联系人</h2>
+                        <p>会务咨询联系：黄嘉新，电话：19145063646（微信：specialbsxq）<br>
+                        邮箱：huangjx@cug.edu.cn</p>
+                        <p>报名住宿事务联系：唐子悦，电话：13657440287（微信：Shao001228）</p>
+                        <p>会议群 (第五届中国温室气体监测研讨会)</p>
+                        <p>会议网站 <a href="https://bcb12365.github.io/show/" target="_blank">https://bcb12365.github.io/show/</a></p>
+                        <p>报名注册后工作人员将联系您进群</p>
                     </div>
                     
                      <div class="final-orgs">
                         <p>中国温室气体监测研讨会组委会<br>
                         中国地质大学（武汉）科学技术学会<br>
                         中国地质大学（武汉）地理与信息工程学院<br>
-                        2025年8月27日</p>
+                        2025年9月30日</p>
                     </div>
                 </div>
             </div>
@@ -423,7 +440,7 @@
         <div class="container-wide">
             <div class="footer-content">
                 <div class="footer-text">
-                    <p><strong>第五年中国温室气体监测研讨会</strong></p>
+                    <p><strong>第五届中国温室气体监测研讨会</strong></p>
                     <p>主办单位：中国地质大学（武汉）科学技术协会</p>
                     <p>承办单位：中国地质大学（武汉）地理与信息工程学院</p>
                 </div>
@@ -439,4 +456,7 @@
     </footer>
 
 </body>
+
 </html>
+
+
